@@ -1,0 +1,22 @@
+{
+  "name": "typescript-tracker",
+  "version": "1.0.0",
+  "description": "7-day intensive TypeScript learning journey and progress tracker",
+  "main": "day-07-capstone-mini-project/tracker.ts",
+  "scripts": {
+    "build": "tsc",
+    "day-01": "npx tsx day-01-basics-and-setup/exercises.ts",
+    "day-02": "npx tsx day-02-functions-and-objects/exercises.ts",
+    "day-03": "npx tsx day-03-interfaces-and-type-aliases/exercises.ts",
+    "day-04": "npx tsx day-04-unions-literals-and-narrowing/exercises.ts",
+    "day-05": "npx tsx day-05-classes-and-oop/exercises.ts",
+    "day-06": "npx tsx day-06-generics-and-utility-types/exercises.ts",
+    "day-07": "npx tsx day-07-capstone-mini-project/tracker.ts"
+  },
+  "keywords": [
+    "typescript",
+    "learning-tracker",
+    "roadmap"
+  ],
+  "license": "MIT"
+}
