@@ -1,22 +1,32 @@
 {
-  "name": "typescript-tracker",
+  "name": "typescript-in-7-days",
   "version": "1.0.0",
-  "description": "7-day intensive TypeScript learning journey and progress tracker",
-  "main": "day-07-capstone-mini-project/tracker.ts",
+  "description": "A beginner-friendly 7-day TypeScript learning repository with daily guides, exercises, and a mini project",
+  "main": "dist/07-day-7-mini-project-and-revision/src/index.js",
   "scripts": {
     "build": "tsc",
-    "day-01": "npx tsx day-01-basics-and-setup/exercises.ts",
-    "day-02": "npx tsx day-02-functions-and-objects/exercises.ts",
-    "day-03": "npx tsx day-03-interfaces-and-type-aliases/exercises.ts",
-    "day-04": "npx tsx day-04-unions-literals-and-narrowing/exercises.ts",
-    "day-05": "npx tsx day-05-classes-and-oop/exercises.ts",
-    "day-06": "npx tsx day-06-generics-and-utility-types/exercises.ts",
-    "day-07": "npx tsx day-07-capstone-mini-project/tracker.ts"
+    "clean": "node -e \"const fs=require('fs'); if (fs.existsSync('dist')) fs.rmSync('dist', { recursive: true, force: true });\"",
+    "start:intro": "tsc && node dist/00-introduction/examples/first-program.js",
+    "start:day1": "tsc && node dist/01-day-1-typescript-basics/examples/basics.js",
+    "start:day2": "tsc && node dist/02-day-2-types-and-variables/examples/primitive-types.js",
+    "start:day3": "tsc && node dist/03-day-3-functions/examples/functions-demo.js",
+    "start:day4": "tsc && node dist/04-day-4-arrays-and-objects/examples/arrays-objects-demo.js",
+    "start:day5": "tsc && node dist/05-day-5-type-system/examples/type-system-demo.js",
+    "start:day6": "tsc && node dist/06-day-6-modern-typescript/examples/main.js",
+    "start:project": "tsc && node dist/07-day-7-mini-project-and-revision/src/index.js"
   },
   "keywords": [
     "typescript",
-    "learning-tracker",
-    "roadmap"
+    "beginner",
+    "tutorial",
+    "7-day-guide",
+    "learn-typescript",
+    "student-management-system"
   ],
-  "license": "MIT"
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
 }

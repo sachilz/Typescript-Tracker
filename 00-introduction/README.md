@@ -168,7 +168,7 @@ console.log("================================");
 
 ### Running the Example
 
-From the `typescript-in-7-days` root folder:
+From the repository root folder:
 
 ```bash
 npm run start:intro

@@ -57,7 +57,7 @@ The Student Management System is organized into three focused files:
 
 ### How to Compile and Run the Project
 
-From the `typescript-in-7-days` root folder:
+From the repository root folder:
 
 ```bash
 # 1. Compile the project
