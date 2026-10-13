@@ -1,3 +1,4 @@
 "use strict";
-console.log("hello ts");
+const firstname = "sachintha";
+console.log(firstname);
 //# sourceMappingURL=hello.js.map

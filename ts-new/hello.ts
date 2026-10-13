@@ -1,1 +1,4 @@
-console.log("hello ts")
+const firstname: string = "sachintha"
+
+console.log(firstname)
+
