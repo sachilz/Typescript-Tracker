@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDir": "./",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "00-introduction/**/*",
+    "01-day-1-typescript-basics/**/*",
+    "02-day-2-types-and-variables/**/*",
+    "03-day-3-functions/**/*",
+    "04-day-4-arrays-and-objects/**/*",
+    "05-day-5-type-system/**/*",
+    "06-day-6-modern-typescript/**/*",
+    "07-day-7-mini-project-and-revision/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
