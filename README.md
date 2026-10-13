@@ -39,43 +39,117 @@ Before starting, you should have:
 
 ---
 
-## Quick Start
+## Getting Started: Initializing Your Setup
 
-### 1. Clone the repository and install dependencies
+This repository lets you set up your own TypeScript environment from scratch so you learn how real projects are configured.
+
+### Step 1: Clone the repository
 
 ```bash
 git clone https://github.com/your-username/typescript-in-7-days.git
 cd typescript-in-7-days
-npm install
 ```
 
-### 2. Verify your TypeScript setup
+### Step 2: Initialize `package.json`
+
+Create your Node.js configuration:
 
 ```bash
-npx tsc -v
+npm init -y
 ```
 
-### 3. Compile the code
+### Step 3: Install TypeScript and Node types
+
+Install TypeScript as a development dependency:
+
+```bash
+npm install -D typescript @types/node
+```
+
+### Step 4: Create `tsconfig.json`
+
+Create a file named `tsconfig.json` in the root folder with the following settings:
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDir": "./",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "00-introduction/**/*",
+    "01-day-1-typescript-basics/**/*",
+    "02-day-2-types-and-variables/**/*",
+    "03-day-3-functions/**/*",
+    "04-day-4-arrays-and-objects/**/*",
+    "05-day-5-type-system/**/*",
+    "06-day-6-modern-typescript/**/*",
+    "07-day-7-mini-project-and-revision/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
+```
+
+### Step 5 (Optional): Add runner scripts to `package.json`
+
+You can add these handy shortcuts inside the `"scripts"` section of your `package.json`:
+
+```json
+"scripts": {
+  "build": "tsc",
+  "start:intro": "tsc && node dist/00-introduction/examples/first-program.js",
+  "start:day1": "tsc && node dist/01-day-1-typescript-basics/examples/basics.js",
+  "start:day2": "tsc && node dist/02-day-2-types-and-variables/examples/primitive-types.js",
+  "start:day3": "tsc && node dist/03-day-3-functions/examples/functions-demo.js",
+  "start:day4": "tsc && node dist/04-day-4-arrays-and-objects/examples/arrays-objects-demo.js",
+  "start:day5": "tsc && node dist/05-day-5-type-system/examples/type-system-demo.js",
+  "start:day6": "tsc && node dist/06-day-6-modern-typescript/examples/main.js",
+  "start:project": "tsc && node dist/07-day-7-mini-project-and-revision/src/index.js"
+}
+```
+
+---
+
+## How to Compile and Run Code
+
+### Option A: Using `npx tsc` directly
+
+Compile all TypeScript files into standard JavaScript inside the `dist/` directory:
+
+```bash
+npx tsc
+```
+
+Then run any compiled example with Node.js:
+
+```bash
+node dist/00-introduction/examples/first-program.js
+node dist/01-day-1-typescript-basics/examples/basics.js
+node dist/02-day-2-types-and-variables/examples/primitive-types.js
+node dist/03-day-3-functions/examples/functions-demo.js
+node dist/04-day-4-arrays-and-objects/examples/arrays-objects-demo.js
+node dist/05-day-5-type-system/examples/type-system-demo.js
+node dist/06-day-6-modern-typescript/examples/main.js
+node dist/07-day-7-mini-project-and-revision/src/index.js
+```
+
+### Option B: Using npm scripts (if added to package.json)
 
 ```bash
 npm run build
-```
-
-This compiles all TypeScript files into standard JavaScript inside the `dist/` directory.
-
-### 4. Run any day's example
-
-Each day includes a pre-configured npm script:
-
-```bash
-npm run start:intro     # Day 0: First TypeScript program
-npm run start:day1      # Day 1: Variables and inference
-npm run start:day2      # Day 2: Primitive types and arrays
-npm run start:day3      # Day 3: Functions and return types
-npm run start:day4      # Day 4: Arrays and object shapes
-npm run start:day5      # Day 5: Type aliases and narrowing
-npm run start:day6      # Day 6: Modules and async/await
-npm run start:project   # Day 7: Student Management System
+npm run start:intro
+npm run start:day1
+npm run start:project
 ```
 
 ---
@@ -91,9 +165,9 @@ Each day's folder contains:
 ### Recommended workflow:
 
 1. Read the day's `README.md` to understand the concepts.
-2. Run the code in `examples/` and try modifying values to see how the compiler responds.
+2. Run the code in `examples/` and experiment with changing values to see how the compiler responds.
 3. Solve the exercises in your own test file before checking `solutions.md`.
-4. Run `npx tsc` to confirm your code compiles with zero type errors.
+4. Run `npx tsc` to verify that your code compiles with zero type errors.
 
 ---
 

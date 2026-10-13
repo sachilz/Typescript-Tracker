@@ -136,15 +136,28 @@ JavaScript Code (.js)
 JavaScript Runtime (Node.js or Browser)
 ```
 
-### Installation and Setup Commands
+### Initializing Your Setup from Scratch
 
-| Command | Purpose |
-| :--- | :--- |
-| `node -v` | Checks that Node.js is installed. |
-| `npm -v` | Checks that npm is installed. |
-| `npm install` | Installs project dependencies (TypeScript and Node type definitions). |
-| `npx tsc` | Runs the TypeScript compiler using `tsconfig.json`. |
-| `node dist/...` | Runs the compiled JavaScript file with Node.js. |
+When you clone this repository, you configure your own setup step-by-step:
+
+1. **Initialize `package.json`:**
+   ```bash
+   npm init -y
+   ```
+2. **Install TypeScript and Node types:**
+   ```bash
+   npm install -D typescript @types/node
+   ```
+3. **Create `tsconfig.json`:**
+   Create a `tsconfig.json` file in the root directory (see the configuration in the root [README.md](../README.md)).
+4. **Compile all files:**
+   ```bash
+   npx tsc
+   ```
+5. **Run the compiled program:**
+   ```bash
+   node dist/00-introduction/examples/first-program.js
+   ```
 
 ---
 
@@ -168,10 +181,11 @@ console.log("================================");
 
 ### Running the Example
 
-From the repository root folder:
+Compile with `npx tsc` and run the output file with Node:
 
 ```bash
-npm run start:intro
+npx tsc
+node dist/00-introduction/examples/first-program.js
 ```
 
 **Output:**
