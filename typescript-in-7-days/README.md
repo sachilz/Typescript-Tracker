@@ -1,6 +1,17 @@
-# typescript-in-7-days
+# 📘 typescript-in-7-days
 
-A beginner-friendly, hands-on 7-day roadmap designed to take you from JavaScript fundamentals to writing confident, type-safe TypeScript code.
+> **A beginner-friendly, hands-on 7-day challenge designed to take you from JavaScript fundamentals to writing confident, type-safe TypeScript code.**  
+> Built for self-study, pair programming, and sharing your journey in public on **LinkedIn** and **GitHub**! 🚀
+
+---
+
+### 🌟 Challenge Highlights
+
+- ⏱️ **Daily Commitment:** 30–60 minutes per day.
+- 🎯 **Level:** Absolute Beginner to Confident Intermediate.
+- 🧪 **Hands-On Practice:** Runnable code files, bite-sized exercises, hints, and full solutions for every single day.
+- 🎓 **Capstone Project:** Complete terminal-based **Student Management System** on Day 7.
+- 📢 **#LearnInPublic:** Includes ready-to-use LinkedIn post templates for each day!
 
 ---
 
